@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors Game</title>
+	<link rel="stylesheet"  href="game.css">
+	<script language="javaScript" src="game.js">	</script>
+  </head>
+
+  <body> 
+  <div class="filter"></div>
+	<table border="1">
+
+	<h1> The Game</h1>
+	<tr>
+    <th>Your selection</th>
+    <th></th>
+    <th>computer</th>
+  </tr>
+  <tr>
+    <td><form name="userChoice">
+      <div id=paper>
+  <input type="radio" name="selection"   value="paper">paper
+  <br></div>
+  <div id=scissors>
+  <input type="radio" name="selection"   value="scissors">scissors
+  <br></div>
+  <div id=rock>
+  <input type="radio" name="selection"   value="rock">rock
+  </div> </form>
+    </td>
+    
+  <td>
+    	<form >
+		  <input type="button" name="button" value="Go!" onclick="play()" style="height: 25px; width: 130px;  color: #FF6868"> 
+	    </form>
+  </td>
+    <td><p id ="play"></p></td>
+  </tr>
+  <tr>
+    <td>you selected:</td>
+    <td colspan="2"><p id="userChoice"></p></td>
+    
+  </tr>
+  <tr>
+    <td>computer randomly generated</td>
+    <td colspan="2"><p id="computerChoice"></p> </td>
+    
+  </tr>
+  </table>
+
+  <div id="randomWord"></div>
+  <div id="randomChoice"></div>
+  <div class="score-board"> score board:
+	<div1 id= "results"></div1></div>
+  </div>
+	<p>
+    History: you have played total:<span id="count">0 time(s)!</span>  
+   </p>
+   <p>paper: <span id= "num1"></span> time(s)
+    & scissors:<span id="num2"></span> time(s)
+    & rock: <span id="num3"></span>time(s) </p>
+	
+</div>
+</body>
+</html>
